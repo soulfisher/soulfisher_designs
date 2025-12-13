@@ -1,0 +1,71 @@
+/* 
+.rendered-content {
+  font-family: Arial, sans-serif; 
+  line-height: 1.6; 
+  margin: 20px; 
+} 
+*/
+
+/* Paragraph styles */
+.rendered-content p {
+  font-size: 18px;
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+.rendered-content .wp-block-columns {
+  gap: 24px;
+  margin-block: 30px;
+  @apply flex-col flex md:flex-row;
+}
+.rendered-content img {
+  width: 100%;
+}
+.rendered-content ul.list li {
+  position: relative;
+}
+.rendered-content ul.list li::after {
+  position: absolute;
+  left: 0px;
+  font-size: 18px;
+  top: 0;
+  color: lime;
+  content: "\ea0f";
+}
+
+.rendered-content .wp-block-column {
+  flex: 1;
+}
+.rendered-content .wp-block-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+/* Blockquote styles */
+.rendered-content blockquote {
+  border-left: 4px solid #ccc; /* Left border for blockquote */
+  margin: 1.5em 0; /* Margin around blockquote */
+  padding-left: 20px; /* Padding inside blockquote */
+  font-style: italic; /* Italic text */
+  color: #555; /* Text color */
+}
+
+/* Heading styles */
+.rendered-content h2,
+.rendered-content h3 {
+  color: #0073aa; /* Change heading color */
+  margin-top: 1.5em; /* Space above headings */
+}
+
+/* List styles */
+.rendered-content ul {
+  list-style-type: disc; /* Bullet points */
+  margin-left: 20px; /* Indentation for list */
+}
+
+/* Image styles */
+.rendered-content img {
+  max-width: 100%; /* Responsive images */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px 0; /* Space around images */
+}

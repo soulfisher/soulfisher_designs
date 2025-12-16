@@ -33,6 +33,6 @@ const Projects = () => {
 export default Projects;
 
 export const metadata = {
-  title: "Project - Techdoit",
-  description: "Project page",
+  title: "Projects - Soulfisher Designs",
+  description: "Projects page",
 };

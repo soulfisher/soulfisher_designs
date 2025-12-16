@@ -45,28 +45,28 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-3 flex-wrap">
               <Link
-                href="https://instagram.com/"
+                href="https://instagram.com/solfshr"
                 target="_blank"
                 className="size-[38px] grid place-content-center rounded-full bg-[#213058] text-sky-blue hover:bg-blue-500 hover:text-white  transition-all duration-500"
               >
                 <FaInstagram />
               </Link>
               <Link
-                href="https://facebook.com/"
+                href="https://facebook.com/profile.php?id=61584683163315"
                 target="_blank"
                 className="size-[38px] grid place-content-center rounded-full bg-[#213058] text-sky-blue hover:bg-blue-500 hover:text-white  transition-all duration-500"
               >
                 <FaFacebookF />
               </Link>
               <Link
-                href="https://linkedin.com/"
+                href="https://linkedin.com/in/cassandra-cook-4851b98"
                 target="_blank"
                 className="size-[38px] grid place-content-center rounded-full bg-[#213058] text-sky-blue hover:bg-blue-500 hover:text-white  transition-all duration-500"
               >
                 <FaLinkedinIn />
               </Link>
               <Link
-                href="https://pinterest.com/"
+                href="https://pinterest.com/cassandrac0517/"
                 target="_blank"
                 className="size-[38px] grid place-content-center rounded-full bg-[#213058] text-sky-blue hover:bg-blue-500 hover:text-white  transition-all duration-500"
               >

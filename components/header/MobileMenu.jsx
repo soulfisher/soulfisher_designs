@@ -53,7 +53,7 @@ const MobileMenu = () => {
                         onClick={closeMenu}
                         href="/"
                       >
-                        Techdoit
+                        Soulfisher Designs
                       </Link>
                       <button onClick={closeMenu}>
                         <IoClose className="text-3xl mb-2" />

@@ -120,6 +120,6 @@ const ProjectDetailsPage = () => {
 export default ProjectDetailsPage;
 
 export const metadata = {
-  title: "Project Details - Techdoit",
+  title: "Project Details - Soulfisher Designs",
   description: "Project Details page",
 };

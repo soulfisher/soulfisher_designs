@@ -1,7 +1,27 @@
+"use client";
+
 import Link from "next/link";
 import PageBanner from "@/components/PageBanner/PageBanner";
+import {useState} from "react";
 
 const ContactPage = () => {
+  const [result, setResult] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    formData.append("access_key", "e15335fd-af7d-4ba6-a84b-6230ca55b4da");
+    //console.log('Data: ', name, email, website, message);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "Success" : "Error");
+  }
+
   return (
     <>
       <section>
@@ -70,7 +90,7 @@ const ContactPage = () => {
             </div>
           </div>
 
-          <form className="bg-sky py-10 p-5  sm:p-10 md:p-16 xl:p-[75px] rounded-2xl">
+          <form onSubmit={handleSubmit} className="bg-sky py-10 p-5  sm:p-10 md:p-16 xl:p-[75px] rounded-2xl">
             <header className="mb-10">
               <h3
                 data-aos="fade-up"
@@ -86,33 +106,39 @@ const ContactPage = () => {
 
             <div className="flex flex-col gap-5">
               <div className="flex flex-col md:flex-row gap-5">
+                <input type="hidden" name="subject" value="Email from Contact Form"/>
                 <input
-                  required
-                  type="text"
-                  placeholder="Your Name*"
-                  className="bg-white text-dim-gray w-full focus-visible:outline-blue-500 placeholder:text-dim-gray rounded-2xl  py-4 sm:py-5 px-6 sm:px-8"
+                    required
+                    type="text"
+                    placeholder="Your Name*"
+                    name="name"
+                    className="bg-white text-dim-gray w-full focus-visible:outline-blue-500 placeholder:text-dim-gray rounded-2xl  py-4 sm:py-5 px-6 sm:px-8"
                 />
                 <input
-                  required
-                  type="email"
-                  placeholder="Your Email*"
-                  className="bg-white text-dim-gray w-full focus-visible:outline-blue-500 placeholder:text-dim-gray rounded-2xl  py-4 sm:py-5 px-6 sm:px-8"
+                    required
+                    type="email"
+                    placeholder="Your Email*"
+                    name="email"
+                    className="bg-white text-dim-gray w-full focus-visible:outline-blue-500 placeholder:text-dim-gray rounded-2xl  py-4 sm:py-5 px-6 sm:px-8"
                 />
               </div>
               <input
-                required
-                type="text"
+                  required
+                  type="text"
                 placeholder="Your Website*"
+                  name="website"
                 className="bg-white text-dim-gray w-full focus-visible:outline-blue-500 placeholder:text-dim-gray rounded-2xl  py-4 sm:py-5 px-6 sm:px-8"
               />
               <textarea
                 required
                 placeholder="Write Message*"
+                name="message"
                 className="bg-white text-dim-gray w-full focus-visible:outline-blue-500 h-36 placeholder:text-dim-gray rounded-2xl  py-4 sm:py-5 px-6 sm:px-8"
               />
               <button className=" w-full bg-blue-500 text-white  group  lg:w-fit   h-[50px] flex items-center justify-center py-4 px-6 sm:px-8 border-2 border-blue-500 hover:bg-white hover:border-white hover:text-navy-blue duration-500 transition-all rounded-xl leading-none font-semibold gap-8">
                 Send Message
               </button>
+              <span>{result}</span>
             </div>
           </form>
         </div>
@@ -122,7 +148,3 @@ const ContactPage = () => {
 };
 export default ContactPage;
 
-export const metadata = {
-  title: "Contact Us - Techdoit",
-  description: "Contact Us page",
-};

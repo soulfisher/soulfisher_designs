@@ -21,6 +21,6 @@ const AboutUsPage = () => {
 export default AboutUsPage;
 
 export const metadata = {
-  title: "About Us - Techdoit",
+  title: "About Us - Soulfisher Designs",
   description: "About Us page",
 };

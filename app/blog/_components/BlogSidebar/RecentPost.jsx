@@ -10,13 +10,14 @@ const RecentPost = async () => {
 
   return (
     <section>
-      <SideBarHeading>Recent Post</SideBarHeading>
+      <SideBarHeading>Recent Posts</SideBarHeading>
       <div className="flex mt-10 flex-col">
         {posts?.map((post) => (
           <Link
             className="flex items-start gap-4 pb-5 mb-5 border-b pr-2 border-dashed border-navy-blue/20 group"
-            href={`/blog/${post.slug}`}
+            href={`https://blog.soulfisherdesigns.pro/${post.slug}`}
             key={post.slug}
+            target={`_blank`}
           >
             <FaCaretRight className=" text-navy-blue/20 text-[22px] group-hover:translate-x-2 group-hover:text-purple duration-[400ms]  transition-all " />
             <span className="font-rubik text-navy-blue group-hover:text-purple duration-[400ms] transition-colors font-medium">

@@ -21,7 +21,7 @@ const Blog = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
           {blogsData.map((blog) => (
             <Link
-              href={`blog/how-to-optimise-and-webinar-to-earn-leads`}
+              href={`blog`}
               className="group overflow-hidden rounded-md"
               key={blog.id}
             >

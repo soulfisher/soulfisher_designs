@@ -16,7 +16,8 @@ const PopularTags = async () => {
           <Link
             className="h-10 rounded-full border grid place-content-center hover:bg-purple hover:text-white px-[18px] shadow-card-2 duration-[400ms] transition-colors text-black"
             key={tag.slug}
-            href={`/tags/${tag.slug}`}
+            href={`https://blog.soulfisherdesigns.pro/tags/${tag.slug}`}
+            target="_blank"
           >
             {tag.name}
           </Link>

@@ -43,7 +43,7 @@ const BlogDetailsPage = async ({ params }) => {
   const comments = await getBlogComments(blog.id);
   const tags = await getBlogTags(blog.id);
 
-  const thumbnail = media.media_details.sizes.medium_large.source_url;
+  //const thumbnail = media.media_details.sizes.medium_large.source_url;
   const title = blog.title.rendered;
   const category = categories[0];
   const formattedDate = formatDate(blog.modified);
@@ -78,7 +78,7 @@ const BlogDetailsPage = async ({ params }) => {
                   dangerouslySetInnerHTML={{ __html: blog.excerpt.rendered }}
                   className="text-lg mb-9"
                 ></article>
-                <div className="mb-10">
+                {/*<div className="mb-10">
                   <Image
                     width={770}
                     height={432}
@@ -86,7 +86,7 @@ const BlogDetailsPage = async ({ params }) => {
                     className="w-full h-[432px] rounded object-cover"
                     alt={blog.title.rendered}
                   />
-                </div>
+                </div>*/}
                 <div
                   className="rendered-content"
                   dangerouslySetInnerHTML={{ __html: blog.content.rendered }}

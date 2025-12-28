@@ -4,7 +4,7 @@ const SearchBox = () => {
   return (
     <form className="flex items-center gap-1 pb-3 border-b border-[#081845]/20">
       <input
-        placeHolder="Search and enter keywords"
+        placeholder="Search and enter keywords"
         type="search"
         className="outline-none text-navy-blue  placeholder:text-navy-blue w-full"
       />

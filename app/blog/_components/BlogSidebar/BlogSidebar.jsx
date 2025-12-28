@@ -7,7 +7,7 @@ import SearchBox from "./SearchBox";
 const BlogSidebar = () => {
   return (
     <div className="flex flex-col gap-10">
-      <SearchBox />
+      {/*<SearchBox />*/}
       <RecentPost />
       <Categories />
       <AdvertisementCard />

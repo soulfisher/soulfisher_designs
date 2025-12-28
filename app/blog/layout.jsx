@@ -2,7 +2,7 @@ import PageBanner from "@/components/PageBanner/PageBanner";
 import BlogSidebar from "./_components/BlogSidebar/BlogSidebar";
 
 export const metadata = {
-  title: "Blog - Techdoit",
+  title: "Blog - Soulfisher Designs",
   description: "Blog page",
 };
 

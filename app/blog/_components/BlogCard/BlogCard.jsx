@@ -10,7 +10,7 @@ const getBlogCategories = cache(async (ids) => getPostCategories(ids));
 
 const BlogCard = async ({ blog }) => {
   const media = await getBlogMedia(blog.featured_media);
-  const thumbnail = media.media_details.sizes.medium_large.source_url;
+  //const thumbnail = media.media_details.sizes.medium_large.source_url;
 
   const categories = await getBlogCategories(blog.categories);
 
@@ -20,20 +20,21 @@ const BlogCard = async ({ blog }) => {
 
   return (
     <article className="pb-10">
-      <div className="mb-8">
+      {/*<div className="mb-8">
         <Image
           width={770}
           height={432}
-          src={thumbnail}
+          src={media}
           className="w-full h-[432px] rounded object-cover"
           alt={blog.title.rendered}
         />
-      </div>
+      </div>*/}
       <header className="mb-4">
         <div className="flex items-center gap-5 mb-5">
           <Link
-            className="h-10 text-sm  uppercase text-white bg-purple rounded-md grid place-content-center w-fit px-3 hover:bg-navy-blue duration-500 transition-colors text-center"
-            href={`/category/${category.slug}`}
+            className="h-10 text-sm uppercase text-white bg-purple rounded-md grid place-content-center w-fit px-3 hover:bg-navy-blue duration-500 transition-colors text-center"
+            href={`https://blog.soulfisherdesigns.pro/category/${category.slug}`}
+            target='_blank'
           >
             {category.name}
           </Link>
@@ -43,7 +44,8 @@ const BlogCard = async ({ blog }) => {
         </div>
 
         <Link
-          href={`/blog/${blog.slug}`}
+          href={`https://blog.soulfisherdesigns.pro/${blog.slug}`}
+          target='_blank'
           className="text-3xl sm:text-4xl text-black font-bold font-rubik line-clamp-2 hover:text-purple  duration-500 transition-colors"
         >
           {blog.title.rendered}
@@ -55,7 +57,8 @@ const BlogCard = async ({ blog }) => {
       ></div>
       <footer>
         <Link
-          href={`/blog/${blog.slug}`}
+          /*href={`/blog/${blog.slug}`}*/
+            href={`https://blog.soulfisherdesigns.pro/${blog.slug}`}
           className="flex group w-fit items-center gap-2 text-navy-blue hover:text-purple duration-500 transition-colors"
         >
           <span className="font-bold   uppercase">Read More</span>

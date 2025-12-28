@@ -26,7 +26,7 @@ const Hero = () => {
           <div className=" text-center lg:text-start">
             <h1
               data-aos="fade-up"
-              className=" font-bold mb-5 text-4xl leading-snug sm:text-5xl sm:leading-snug"
+              className=" font-bold mt-10 sm:mt-0 mb-5 text-4xl leading-snug sm:text-5xl sm:leading-snug"
             >
               Delivering Superior <br /> Services{" "}
               <span className="text-blue-500">&amp; IT Solutions.</span>

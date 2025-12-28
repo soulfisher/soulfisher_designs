@@ -20,7 +20,7 @@ const AdvertisementCard = () => {
         </span>
 
         <Link className="text-[25px] font-extrabold" href="tel:+1245698909">
-          + 124 569 89 09
+          +1 916-290-3306
         </Link>
       </div>
     </article>

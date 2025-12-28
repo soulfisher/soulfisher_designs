@@ -6,7 +6,7 @@ import { FaCheck } from "react-icons/fa6";
 const About = () => {
   return (
     <section>
-      <div className="mx-auto max-w-container px-container py-20">
+      <div className="mx-auto max-w-container px-container py-5">
         <div className="flex pt-8 lg:items-center flex-col lg:flex-row gap-24">
           <div className="flex-1">
             <div className="relative max-w-lg mx-auto isolate">

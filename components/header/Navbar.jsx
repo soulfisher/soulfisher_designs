@@ -25,11 +25,11 @@ export const navLinks = [
     label: "Projects",
     href: "/projects",
   },
-  /*{
+  {
     id: 5,
     label: "Blog",
     href: "/blog",
-  },*/
+  },
   {
     id: 6,
     label: "Contact",
@@ -37,7 +37,7 @@ export const navLinks = [
   },
 ];
 
-const scrollHight = 128;
+const scrollHight = 144;
 
 const Navbar = () => {
   const scroll = useScroll();
@@ -46,7 +46,7 @@ const Navbar = () => {
   const imgSrc = scrollDir === "down" ? "/sf_logo_hor.png" : "/sf_logo_hor_white.png";
 
   return (
-    <nav className="h-16 sm:h-20 lg:h-[150px] flex items-center justify-between max-w-container mx-auto px-container">
+    <nav className="h-36 flex items-center justify-between max-w-container mx-auto px-container">
       <Link className="text-2xl font-bold" href="/">
         <Image src={imgSrc} alt="Soulfisher Designs Logo" width={300} height={96} />
       </Link>

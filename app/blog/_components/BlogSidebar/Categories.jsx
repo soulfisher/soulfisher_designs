@@ -15,7 +15,8 @@ const Categories = async () => {
         {categories?.map((category) => (
           <Link
             className="flex items-start gap-4 pb-5 mb-5 border-b pr-2 border-dashed border-navy-blue/20 group"
-            href={`/blog/categories/${category.slug}`}
+            href={`https://blog.soulfisherdesigns.pro/categories/${category.slug}`}
+            target="_blank"
             key={category.slug}
           >
             <FaCaretRight className=" text-navy-blue/20 text-[22px] group-hover:translate-x-2 group-hover:text-purple duration-[400ms]  transition-all " />

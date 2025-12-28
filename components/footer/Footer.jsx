@@ -135,6 +135,24 @@ const Footer = () => {
                   </div>
                 </div>
               </Link>
+              <Link className="flex items-center gap-5 " href="https://blog.soulfisherdesigns.pro/why-your-business-needs-a-website-the-essential-guide/" target="_blank">
+                <Image
+                  width={70}
+                  height={70}
+                  className="size-[70px] object-cover rounded-md"
+                  alt="blog"
+                  src="/blog_thumb.jpg"
+                />
+                <div className="flex text-sm flex-col gap-2">
+                  <p className="text-ash max-w-[200px] line-clamp-2">
+                    Why Your Business Needs ...
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <IoMdTime className="text-blue text-lg" />
+                    <div className="line-clamp-1">Dec. 26, 2025</div>
+                  </div>
+                </div>
+              </Link>
               {/*<Link className="flex items-center gap-5 " href="/blog/1">
                 <Image
                   width={70}
